@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #191E29;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+/* Navigation Bar & Logo */
+
+nav {
+  height: 30px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-name {
+  color: #01C38d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0 30px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links>li {
+  margin: 0 30px;
+  padding: 5px;
+  list-style: none;
+}
+
+.nav-links>li>a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-links>li>a:hover {
+  color: #01C38d;
+}
+
+/* Main section */
+/* Hero */
+
+.hero {
+  font-size: 45px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-subtitle {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 200;
+  color: #01C38d;
+}
+
+#hand-pointing-down {
+  font-size: 25px;
+  position: absolute;
+  bottom: 150px;
+}
+
+/* Sections block projects, work experience and education */
+
+.information-container {
+  height: 70vh;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+.projects,
+.work-experience {
+  border-right: 1px solid white;
+}
+
+.projects-title,
+.work-experience-title,
+.education-title {
+  text-align: center;
+}
+
+.projects-list {
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+}
+
+.projects-list>li {
+  padding-left: 10px;
+  border-bottom: 1px solid white;
+  list-style: none;
+}
+
+#projects-last-list-item {
+  border-bottom: none;
+}
+
+/* Work Experience */
+
+.work-list-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.work-one,
+.work-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-one {
+  border-bottom: 1px solid white;
+}
+
+.work-one *,
+.work-two * {
+  margin: 0 10px;
+}
+
+.work-one>a,
+.work-two>a {
+  color: #01C38d;
+}
+
+/* Education */
+
+.education-information-container {
+  margin: 20px 0 0 10px;
+}
+
+.education_information {
+  margin: 40px 0;
+}
+
+.education_courses-list>li {
+  padding: 3px 0;
+  margin-left: 18px;
+}
